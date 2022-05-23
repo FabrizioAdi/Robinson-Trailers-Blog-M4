@@ -18,4 +18,5 @@ class Post(models.Model):
         return self.title
 # Created blog post gos to post detail page 
     def get_absolute_url(self):
+        #return reverse('home')
         return reverse('post-detail', args=(str(self.id)))
