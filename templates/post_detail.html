@@ -1,6 +1,11 @@
 <h1>{{ post.title }}</h1>
 <small>Created by: {{ post.author }}</small>
-    {{ post.excerpt }}<br/>
-    <hr>   
-    {{ post.body }}<br/>
-    {{ post.created_on}}
+{{ post.excerpt }}<br/>
+<hr>
+<br/>  
+{{ post.body }}<br/>
+{{ post.created_on}}
+
+<br/><br/>
+<a href="{% url 'home' %}">Back</a>
+
