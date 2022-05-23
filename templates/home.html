@@ -2,9 +2,10 @@
 
 <ul>
     {% for post in object_list %}
-    <li>{{ post.title }} - {{ post.author }}</br>
-    {{ post.excerpt }}</br>    
-    {{ post.body }}</br>
+<!-- pk-primary key, unique key for post -->  
+    <li><a href="{% url 'post-detail' post.pk %}">{{ post.title }}</a> - {{ post.author }}<br/>
+    {{ post.excerpt }}<br/>    
+    {{ post.body }}<br/>
     {{ post.created_on}}</li>
     {% endfor %}
 </ul>
