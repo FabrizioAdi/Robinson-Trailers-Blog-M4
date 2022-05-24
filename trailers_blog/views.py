@@ -25,5 +25,6 @@ class AddPostView(CreateView):
 
 class EditPostView(UpdateView):
     model = Post
+    form_class = PostForm
     template_name = 'edit_post.html'
-    fields = ('title', 'title_tag', 'featured_image', 'excerpt', 'body')
+    #fields = ('title', 'title_tag', 'featured_image', 'excerpt', 'body')
