@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.views.generic import ListView, DetailView, CreateView, UpdateView
 from .models import Post
-from .forms import PostForm
+from .forms import PostForm, EditForm
 
 # Create your views here.
 # def home(request):
@@ -25,6 +25,6 @@ class AddPostView(CreateView):
 
 class EditPostView(UpdateView):
     model = Post
-    form_class = PostForm
+    form_class = EditForm
     template_name = 'edit_post.html'
     #fields = ('title', 'title_tag', 'featured_image', 'excerpt', 'body')
