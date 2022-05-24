@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.views.generic import ListView, DetailView, CreateView
+from django.views.generic import ListView, DetailView, CreateView, UpdateView
 from .models import Post
 from .forms import PostForm
 
@@ -21,4 +21,9 @@ class AddPostView(CreateView):
     template_name = 'add_post.html'
     #fields = '__all__'
     # Method to add separately
-    #fields = ('title', 'author', 'featured_image', 'excerpt', 'updated_on')
+    #fields = ('title', 'author', 'featured_image', 'excerpt', 'body')
+
+class EditPostView(UpdateView):
+    model = Post
+    template_name = 'edit_post.html'
+    fields = ('title', 'title_tag', 'featured_image', 'excerpt', 'body')
