@@ -21,4 +21,4 @@ class AddPostView(CreateView):
     template_name = 'add_post.html'
     #fields = '__all__'
     # Method to add separately
-    #fields = ('title', 'author', 'featured_image', 'excerpt', 'updated_on') etc.
+    #fields = ('title', 'author', 'featured_image', 'excerpt', 'updated_on')
