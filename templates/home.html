@@ -12,7 +12,10 @@
     <li><a href="{% url 'post-detail' post.pk %}">{{ post.title }}</a> - {{ post.author }}<br/>
     {{ post.excerpt }}<br/>    
     {{ post.body }}<br/>
-    {{ post.created_on}}</li>
+    {{ post.created_on}}
+    <!-- Link to edit post -->
+    <small><a href ="{% url 'edit_post' post.pk %}">Edit Post</a></small>
+</li>
     {% endfor %}
 </ul>
 
