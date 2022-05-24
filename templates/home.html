@@ -15,7 +15,7 @@
     {{ post.created_on}}
     <!-- Link to edit post -->
     <small>
-        <a href ="{% url 'edit_post' post.pk %}">Edit Post</a>
+        <a href ="{% url 'edit_post' post.pk %}">Edit Post</a> or
         <a href ="{% url 'delete_post' post.pk %}">Delete Post</a>
     </small>
 </li>
