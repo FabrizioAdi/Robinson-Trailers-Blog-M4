@@ -17,7 +17,7 @@ class PostForm(forms.ModelForm):
 class EditForm(forms.ModelForm):
     class Meta:
         model = Post
-        fields = ('title', 'title_tag', 'featured_image', 'excerpt', 'body')
+        fields = ('title', 'title_tag', 'excerpt', 'body')
 # Python dictionary add many items you like
         widgets = {
             'title': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Add your title'}),
