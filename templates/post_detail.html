@@ -5,11 +5,13 @@
 
 
 <h1>{{ post.title }}</h1>
-<small>Created by: {{ post.author }} - 
-    <a href ="{% url 'edit_post' post.pk %}">Edit Post
+<small>Created by: {{ post.author }}
+    {% if user.is_authenticated %}
+    - <a href ="{% url 'edit_post' post.pk %}">Edit Post
     </a> or
     <a href ="{% url 'delete_post' post.pk %}">Delete Post
     </a>
+    {% endif %}
     </small>
 <br/>
 {{ post.excerpt }}<br/>

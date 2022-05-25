@@ -2,6 +2,7 @@
 {% block title %}Delete Blog Post{% endblock %}
 {% block content %}
 
+{% if user.is_authenticated %}
 <h1>Delete Blog Post</h1>
 <br/>
 <h3>Delete: {{ post.title }}</h3>
@@ -12,5 +13,11 @@
     <button class="btn btn-danger">Delete Post</button>
 </form>
 </div>
+{% else %}
+<br/>
+<p> You have not created an account yet!!!<br/>
+    If you want add, edit or delete blog post, please
+    <a href="{{ signup_url }}">sign up</a> first.</p>
+{% endif %}
 
 {% endblock %}
