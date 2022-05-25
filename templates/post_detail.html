@@ -3,14 +3,16 @@
 
 {% block content %}
 
-
 <h1>{{ post.title }}</h1>
 <small>Created by: {{ post.author }} 
+<!-- Authentication -->
     {% if user.is_authenticated %}
+    {% if user.id == post.author.id %}
     - <a href ="{% url 'edit_post' post.pk %}">Edit Post
     </a> or
     <a href ="{% url 'delete_post' post.pk %}">Delete Post
     </a>
+    {% endif %}
     {% endif %}
     </small>
 <br/>
