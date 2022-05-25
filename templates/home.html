@@ -16,8 +16,10 @@
     <!-- Link to edit post -->
     <small>
         {% if user.is_authenticated %}
+        {% if user.id == post.author.id %}
         <a href ="{% url 'edit_post' post.pk %}">Edit Post</a> or
         <a href ="{% url 'delete_post' post.pk %}">Delete Post</a>
+        {% endif %}
         {% endif %}
     </small>
 </li>
