@@ -3,6 +3,8 @@
 {% block content %}
 
 {% if user.is_authenticated %}
+{% if user.id == post.author.id %}
+
 <h1>Edit Blog Post</h1>
 <br/>
 <div class ="form-group">
@@ -12,6 +14,12 @@
     <button class="btn btn-warning">Edit</button>
 </form>
 </div>
+{% else %}
+<br/>
+<p> You have not created an account yet!!!<br/>
+    If you want add, edit or delete blog post, please
+    <a href="{% url 'account_signup' %}">sign up</a> first.</p>
+{% endif %}
 {% else %}
 <br/>
 <p> You have not created an account yet!!!<br/>
