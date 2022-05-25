@@ -16,7 +16,7 @@
 <br/>
 <p> You have not created an account yet!!!<br/>
     If you want add, edit or delete blog post, please
-    <a href="{{ signup_url }}">sign up</a> first.</p>
+    <a href="{% url 'account_signup' %}">sign up</a> first.</p>
 {% endif %}
 
 {% endblock %}

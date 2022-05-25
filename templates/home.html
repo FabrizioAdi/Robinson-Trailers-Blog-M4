@@ -10,8 +10,8 @@
     {% for post in object_list %}
 <!-- pk-primary key, unique key for post -->  
     <li><a href="{% url 'post-detail' post.pk %}">{{ post.title }}</a> - {{ post.author }}<br/>
-    {{ post.excerpt }}<br/>    
-    {{ post.body }}<br/>
+    {{ post.excerpt|slice:":200" }}<br/>    
+    {{ post.body|slice:":200" }}<br/>
     {{ post.created_on}}
     <!-- Link to edit post -->
     <small>
