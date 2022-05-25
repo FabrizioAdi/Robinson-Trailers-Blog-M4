@@ -3,6 +3,8 @@
 {% block content %}
 
 {% if user.is_authenticated %}
+{% if user.id == post.author.id %}
+
 <h1>Delete Blog Post</h1>
 <br/>
 <h3>Delete: {{ post.title }}</h3>
@@ -13,6 +15,10 @@
     <button class="btn btn-danger">Delete Post</button>
 </form>
 </div>
+{% else %}
+<br/>
+<p> You cant delete other user post !!!</p>
+{% endif %}
 {% else %}
 <br/>
 <p> You have not created an account yet!!!<br/>
