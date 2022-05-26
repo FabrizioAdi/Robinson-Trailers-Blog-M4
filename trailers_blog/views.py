@@ -30,6 +30,10 @@ class AddCategoryView(CreateView):
     model = Category
     template_name = 'add_category.html'
     fields = '__all__'
+# Functional view
+def CategoryView(request, cat):
+    return render(request, 'categories.html', {})
+
 
 class EditPostView(UpdateView):
     model = Post
