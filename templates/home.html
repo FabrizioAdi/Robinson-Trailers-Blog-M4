@@ -10,10 +10,10 @@
     {% for post in object_list %}
 <!-- pk-primary key, unique key for post -->  
     <li><a href="{% url 'post-detail' post.pk %}">{{ post.title }}</a> - {{ post.author }}<br/>
-    {{ post.excerpt|slice:":200" }}<br/>    
-    {{ post.body|slice:":200" }}<br/>
+    {{ post.excerpt|slice:":200"|safe }}<br/>    
+    {{ post.body|slice:":200"|safe }}<br/>
     {{ post.created_on}}
-    <!-- Link to edit post -->
+<!-- Link to edit and delete post -->
     <small>
         {% if user.is_authenticated %}
         {% if user.id == post.author.id %}
