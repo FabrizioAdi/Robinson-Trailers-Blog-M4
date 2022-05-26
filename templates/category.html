@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block title %}New Blog Category{% endblock %}
+
+{% block content %}
+
+{% if user.is_authenticated %}
+
+<h1>Category</h1>
+<br/>
+<div class ="form-group">
+<form method="Post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button class="btn btn-warning">Category</button>
+</form>
+</div>
+
+<script>
+    var name = "{{ user.username }}";
+    document.getElementById("user").value
+        = name;
+
+</script>
+
+{% else %}
+<br/>
+<p> You have not created an account yet!!!<br/>
+    If you want add, edit or delete blog post, please
+    <a href="{% url 'account_signup' %}">sign up</a> first.</p>
+{% endif %}
+
+{% endblock %}
