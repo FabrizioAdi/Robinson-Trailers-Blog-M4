@@ -26,6 +26,11 @@ class AddPostView(CreateView):
     # Method to add separately
     #fields = ('title', 'author', 'featured_image', 'excerpt', 'body')
 
+class AddCategoryView(CreateView):
+    model = Category
+    template_name = 'category.html'
+    fields = '__all__'
+
 class EditPostView(UpdateView):
     model = Post
     form_class = EditForm
