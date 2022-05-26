@@ -32,7 +32,8 @@ class AddCategoryView(CreateView):
     fields = '__all__'
 # Functional view
 def CategoryView(request, cat):
-    return render(request, 'categories.html', {'cat':'cat'})
+    category_posts = Post.objects.filter(category=cat)
+    return render(request, 'categories.html', {'cat':'cat': 'category_posts':'category_posts'})
 
 
 class EditPostView(UpdateView):
