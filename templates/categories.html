@@ -3,9 +3,31 @@
 
 {% block content %}
 
+{% if category_posts %}
 
 <h1>{{ cat }}Category</h1>
+<ul>
+<!-- Category loop -->
+{% for post in category_posts %}
 
-category_posts
+    <!-- pk-primary key, unique key for post -->  
+    <li><a href="{% url 'post-detail' post.pk %}">{{ post.title }}</a>
+        - {{ post.author }}<br/>
+    {{ post.excerpt|slice:":200"|safe }}<br/>    
+    {{ post.body|slice:":200"|safe }}<br/>
+    {{ post.created_on}}
+<!-- Link to edit and delete post -->
+    <small>
+        {% if user.is_authenticated %}
+        {% if user.id == post.author.id %}
+        <a href ="{% url 'edit_post' post.pk %}">Edit Post</a> or
+        <a href ="{% url 'delete_post' post.pk %}">Delete Post</a>
+
+{% endfor %}
+</ul>
+
+{% else %}
+    <h2>Sorry, this page does not exist</h2>
+{% endif %}
 
 {% endblock %}
