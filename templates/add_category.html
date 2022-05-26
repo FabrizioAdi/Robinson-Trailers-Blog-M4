@@ -1,17 +1,17 @@
 {% extends 'base.html' %}
-{% block title %}New Blog Category{% endblock %}
+{% block title %}Add New Blog Category{% endblock %}
 
 {% block content %}
 
 {% if user.is_authenticated %}
 
-<h1>Category</h1>
+<h1>Add Category</h1>
 <br/>
 <div class ="form-group">
 <form method="Post">
     {% csrf_token %}
     {{ form.as_p }}
-    <button class="btn btn-warning">Category</button>
+    <button class="btn btn-warning">Add Category</button>
 </form>
 </div>
 
