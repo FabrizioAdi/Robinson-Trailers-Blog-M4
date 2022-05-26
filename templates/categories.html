@@ -5,7 +5,7 @@
 
 {% if category_posts %}
 
-<h1>{{ cat }}Category</h1>
+<h1>{{ cat }}</h1>
 <ul>
 <!-- Category loop -->
 {% for post in category_posts %}
@@ -22,8 +22,10 @@
         {% if user.id == post.author.id %}
         <a href ="{% url 'edit_post' post.pk %}">Edit Post</a> or
         <a href ="{% url 'delete_post' post.pk %}">Delete Post</a>
+        {% endif %}
+        {% endif %}
 
-{% endfor %}
+    {% endfor%}
 </ul>
 
 {% else %}

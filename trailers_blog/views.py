@@ -17,7 +17,7 @@ class HomeView(ListView):
 # Functional view
 def CategoryView(request, cat):
     category_posts = Post.objects.filter(category=cat)
-    return render(request, 'categories.html', {'cat':'cat.title()', 'category_posts':'category_posts'})
+    return render(request, 'categories.html', {'cat':cat.title(), 'category_posts':category_posts})
 
 class PostDetailView(DetailView):
     model = Post
