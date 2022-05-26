@@ -32,7 +32,7 @@ class AddCategoryView(CreateView):
     fields = '__all__'
 # Functional view
 def CategoryView(request, cat):
-    return render(request, 'categories.html', {})
+    return render(request, 'categories.html', {'cat':'cat'})
 
 
 class EditPostView(UpdateView):
