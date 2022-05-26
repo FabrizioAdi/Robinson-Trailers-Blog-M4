@@ -29,6 +29,12 @@ class PostDetailView(DetailView):
     model = Post
     template_name = 'post_detail.html'
 
+    def get_context_data(self, *args, **kwargs):
+        cat_menu = Category.objects.all()
+        context = super(PostDetailView, self).get_context_data(*args, **kwargs)
+        context["cat_menu"] = cat_menu
+        return context
+
 class AddPostView(CreateView):
     model = Post
     form_class = PostForm
@@ -36,6 +42,12 @@ class AddPostView(CreateView):
     #fields = '__all__'
     # Method to add separately
     #fields = ('title', 'author', 'featured_image', 'excerpt', 'body')
+
+    def get_context_data(self, *args, **kwargs):
+        cat_menu = Category.objects.all()
+        context = super(AddPostView, self).get_context_data(*args, **kwargs)
+        context["cat_menu"] = cat_menu
+        return context
 
 class AddCategoryView(CreateView):
     model = Category
