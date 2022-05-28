@@ -28,9 +28,10 @@
 <br/>
 <hr>
 <br/>
-<form action = "{% url 'like_post' post.pk %}" method = "POST">
+<form action = "{% url 'like_post' post.pk %}" method ="POST">
     {% csre_token %}
     <button type="submmit", name="post_id", value="{{ post.id }}", class="btn btn-primary btn-sm">Like</button>
+    {{ total_likes }} - likes
 </form>
 <!-- <i class="fa-solid fa-thumbs-up"></i> -->
 

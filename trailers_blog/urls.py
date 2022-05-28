@@ -11,5 +11,5 @@ urlpatterns = [
     path('post/<int:pk>/delete', DeletePostView.as_view(), name='delete_post'),
     path('add_category/', AddCategoryView.as_view(), name='add_category'),
     path('category/<str:cat>/', CategoryView, name='category'),
-    post('like/<int:pk>', LikeView, name='like_post'),
+    path('like/<int:pk>', LikeView, name='like_post'),
 ]
