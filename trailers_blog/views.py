@@ -1,8 +1,9 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from .models import Post, Category
 from .forms import PostForm, EditForm
-from django.urls import reverse_lazy
+from django.urls import reverse_lazy, reverse
+from django.http import HttpResponseRedirect
 
 # Create your views here.
 # def home(request):
@@ -64,3 +65,8 @@ class DeletePostView(DeleteView):
     model = Post
     template_name = 'delete_post.html'
     success_url = reverse_lazy('home')
+# Likes function
+def LikeView(request, pk):
+    post = get_object_or_404(Post, id=request.POST.get('post.id'))
+    post.likes.add(request.user)
+    return HttpResponseRedirect(reverse('post-detail', args=[str(pk)]))
