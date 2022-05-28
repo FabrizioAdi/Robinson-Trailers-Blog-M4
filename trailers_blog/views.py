@@ -71,6 +71,7 @@ class DeletePostView(DeleteView):
 
 # Likes function
 def LikeView(request, pk):
-    post = get_object_or_404(Post, id=request.POST.get('post.id'))
-    post.likes.add(request.user)
-    return HttpResponseRedirect(reverse('post-detail', args=[str(pk)]))
+    if request.method == 'POST':
+        post = get_object_or_404(Post, pk=pk)
+        post.likes.add(request.user)
+        return HttpResponseRedirect(reverse('post-detail', args=[str(pk)]))
