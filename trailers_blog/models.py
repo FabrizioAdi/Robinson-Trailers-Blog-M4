@@ -24,6 +24,7 @@ class Post(models.Model):
     body = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
     category = models.CharField(max_length=250, default='forestry')
+    likes = models.ManyToManyField(User, related_name='blog_posts')
 
     def __str__(self):
         return self.title
