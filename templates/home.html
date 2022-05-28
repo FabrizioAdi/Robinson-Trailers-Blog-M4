@@ -12,6 +12,15 @@
     <li><a href="{% url 'post-detail' post.pk %}">{{ post.title }}</a>
         - <a href="{% url 'category' post.category %}">{{ post.category }}</a>
         - {{ post.author }}<br/>
+
+        <div class="image-container">
+            {% if "placeholder" in post.featured_image.url %}
+            <img class="card-img-top"
+                src="https://codeinstitute.s3.amazonaws.com/fullstack/blog/default.jpg">
+            {% else %}
+            <img class="card-img-top" src=" {{ post.featured_image.url }}">
+            {% endif %}
+
     {{ post.excerpt|slice:":200"|safe }}<br/>    
     {{ post.body|slice:":200"|safe }}<br/>
     {{ post.created_on}}
