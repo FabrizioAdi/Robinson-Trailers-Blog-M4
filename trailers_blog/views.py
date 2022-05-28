@@ -33,8 +33,8 @@ class PostDetailView(DetailView):
     def get_context_data(self, *args, **kwargs):
         cat_menu = Category.objects.all()
         context = super(PostDetailView, self).get_context_data(*args, **kwargs)
-        stuff = get_object_or_404(Post, id=self.kwargs['pk'])
-        total_likes = stuff.total_likes()
+        count = get_object_or_404(Post, id=self.kwargs['pk'])
+        total_likes = count.total_likes()
         context["cat_menu"] = cat_menu
         context["total_likes"] = total_likes
         return context
@@ -68,6 +68,7 @@ class DeletePostView(DeleteView):
     model = Post
     template_name = 'delete_post.html'
     success_url = reverse_lazy('home')
+
 # Likes function
 def LikeView(request, pk):
     post = get_object_or_404(Post, id=request.POST.get('post.id'))
