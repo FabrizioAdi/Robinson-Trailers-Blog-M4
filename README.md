@@ -1,12 +1,19 @@
 # Robinson Trailers Blog
-![]()
 
 A blog dedicated to a real trailers manufacturing company.
 
+![]()
+
+The company is Manufacturers and Suppliers of a complete range of Trailers and Equipment. The company headquarter is in Portarlington Co. Laoise Ireland.
+
+I chose this company for my project because I work for it on part time. 
+The company offers many different trailers for different sectors, for example I have listed these sectors in the dropdown menu call categories like forestry, construction or special orders. My blog was created to introduce the company and also to give other users the opportunity to share other trailer ideas and technologies.
+
+This project is the fourth out of four Milestone Projects in the Full Stack Web Development Program I am attending at The Code Institute.
+
 [View the live project here.]()
 
-- [Robinson Trailers Blog](#robinson-trailers-blog)
-  * [Table of Content](#table-of-content)
+- [Table of Content](#table-of-content)
   * [User Experience (UX)](#user-experience--ux-)
     + [Project goals](#project-goals)
     + [Business goals](#business-goals)
@@ -27,7 +34,8 @@ A blog dedicated to a real trailers manufacturing company.
   * [Deployment](#deployment)
       - [GitHub Repository](#github-repository)
       - [Making a Local Clone](#making-a-local-clone)
-      - [Heroku  Deployment](#heroku--deployment)
+      - [Heroku Deployment](#heroku-deployment)
+      - [Cloudinary Setup](#cloudinary-setup)
       - [AWS S3](#aws-s3)
       - [Google API](#google-api)
   * [Credits](#credits)
@@ -39,7 +47,18 @@ A blog dedicated to a real trailers manufacturing company.
 
 ### Project goals
 
+* Main goal was making a full-stack site based around business logic used to control a centrally-owned database.
+* The site provides an authentication mechanism for Login, Logout, Registration. Person who is not a user of the site cannot edit or delete other users' blogs. These functions are also hidden from unlogged users.
+* Making a full-stack site that uses HTML, CSS, JavaScript, Python + Django.
+* Creating a website that uses a relational database.
+* Creating a website which encourages to add engineering and technological blogs regarding trailers or maybe describe some components needed for construction.
+
 ### Business goals
+
+* Creating a secure and professional website using authentication.
+* Provide product for different sectors in transport.
+* Makes introduce and promotion for the company.
+* Makes accessible to everyone even for those who are not related to the transport sector, as blogs are displayed for everyone.
 
 ### User Goals
 
@@ -151,7 +170,7 @@ The Bootstrap front-end framework is used through the project. Bootstrap provide
 7. Press Enter.
 8. You now have a local clone.
 
-#### Heroku  Deployment
+#### Heroku Deployment
 
 1. Create an account at heroku.com
 2. Create a new app, add app name and your region
@@ -163,6 +182,32 @@ The Bootstrap front-end framework is used through the project. Bootstrap provide
 8. Enter your repository name and click on it when it shows below
 9. Choose the branch you want to buid your app from
 10. If desired, click on "Enable Automatic Deploys", which keeps the app up to date with your Github repository
+
+Manualy deploy to heroku from gitpod workspace.
+
+1. Open the terminal.
+2. For those of you who are using MFA/2FA: please scroll down to see the additional steps required.
+For those of you not using MFA/2FA: Log in to Heroku and enter your details.
+command: heroku login -i
+3. Get your app name from heroku.
+command: heroku apps
+4. Set the heroku remote. (Replace <app_name> with your actual app name and remove the <> characters)
+command: heroku git:remote -a <app_name>
+5. Add and commit any changes to your code if applicable
+command: git add . && git commit -m "Deploy to Heroku via CLI"
+6. Push to both GitHub and Heroku
+command: git push origin main
+command: git push heroku main
+
+#### Cloudinary Setup
+
+1. Visit the Cloudinary website
+2. Click on the Sign Up For Free button
+3. Provide your name, email address and choose a password
+4. For Primary interest, you can choose Programmable Media for image and video API
+5. Optional: edit your assigned cloud name to something more memorable
+6. Click Create Account
+7. Verify your email and you will be brought to the dashboard
 
 #### AWS S3
 
