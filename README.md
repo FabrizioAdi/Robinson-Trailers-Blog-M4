@@ -1,108 +1,200 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Robinson Trailers Blog
+![]()
 
-Welcome FabrizioAdi,
+A blog dedicated to a real trailers manufacturing company.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+[View the live project here.]()
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+- [Robinson Trailers Blog](#robinson-trailers-blog)
+  * [Table of Content](#table-of-content)
+  * [User Experience (UX)](#user-experience--ux-)
+    + [Project goals](#project-goals)
+    + [Business goals](#business-goals)
+    + [User Goals](#user-goals)
+    + [Site Owner goals](#site-owner-goals)
+    + [Target audience](#target-audience)
+  * [User Stories](#user-stories)
+      - [Visitor goals:](#visitor-goals-)
+  * [Structure](#structure)
+  * [Design](#design)
+  * [Existing Features](#existing-features)
+      - [Features left to implement in the future](#features-left-to-implement-in-the-future)
+  * [Technologies used](#technologies-used)
+      - [Languages](#languages)
+      - [Applications, Libraries and Platforms](#applications--libraries-and-platforms)
+      - [Databases](#databases)
+  * [Validation](#validation)
+  * [Deployment](#deployment)
+      - [GitHub Repository](#github-repository)
+      - [Making a Local Clone](#making-a-local-clone)
+      - [Heroku  Deployment](#heroku--deployment)
+      - [AWS S3](#aws-s3)
+      - [Google API](#google-api)
+  * [Credits](#credits)
+  * [Reference](#reference)
 
-## Gitpod Reminders
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## User Experience (UX)
 
-`python3 -m http.server`
+### Project goals
 
-A blue button should appear to click: _Make Public_,
+### Business goals
 
-Another blue button should appear to click: _Open Browser_.
+### User Goals
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+### Site Owner goals
 
-A blue button should appear to click: _Make Public_,
+### Target audience
 
-Another blue button should appear to click: _Open Browser_.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+## User Stories
+#### Visitor goals:
 
-To log into the Heroku toolbelt CLI:
+## Structure
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+1. Home
+2. Contact
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+## Design 
 
-------
+1. Frameworks
+The Bootstrap front-end framework is used through the project. Bootstrap provides a quick design, responsive grid system, extensive prebuilt components and a modern interface for the project.
+2. Images
+3. Fonts
+4. Colour
 
-## Release History
+## Existing Features
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+1. The Navbar
+2. Home Page
+3. Footer
+4. Login/Logout
+5. Register
+6. Add and remove posts
+7. Contact
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+#### Features left to implement in the future
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+## Technologies used
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+#### Languages
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+* Python 3.8 was used for backend of the project.
+* HTML5 was used for building all web pages.
+* jQuery is used for implementation of Bootstrap.
+* CSS3 used for styling the website.
+* JavaScript for alert and location fnunctionality.
+* Jinja provides the templating language for Python.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+#### Applications, Libraries and Platforms
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+* This project is built through the framework Django.
+* GitPod is used to develop the project. All code was written and tested with the Gitpod web-based IDE.
+* Git control system was used for version control to commit to Git and push to GitHub.
+* GitHub projects repository is used to host the project.
+* Heroku is used to host the project/Used to deploy the application.
+* Bootstrap 5 as a framework used for styling.
+* Pip3 is used for installing the necessary tools, libraries and frameworks.
+* Spycopg2 is used to enable the PostGreSQL database to connect with Django.
+* AWS Amazon used to store static and media files.(CSS and JavaScript)
+* Boto3 is used for compatibility in AWS.
+* Gunicorn is used to enable deployment to Heroku.
+* Google Fonts is used to provide the font roboto for all the text that is used in the project.
+* Font Awesome fonts were used for all icons in this project.
+* Figma/Balsamiq used to create the mockup designs for the project. 
+* Django Crispy Forms is used to style the Django forms
+* Cloudinary - Cloud Platform used for images storage.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+#### Databases
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+* PostgreSQL is used as the production database.
+* SQlite3 is used as the development database.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+## Validation
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+* Chrome DevTools is used to detect problems and test responsiveness.
+* Autoprefixer is used to parse the CSS and to add vendor prefixes to CSS rules.
+* W3C Markup Validation Service is used to check whether there were any errors in the HTML5 code.
+* W3C CSS validator is used to check whether there were any errors in the CSS3 code.
+* JShint is a JavaScript validator that is used to check whether there were any errors in the JavaScript code.
+* PEP8 validator is used to check whether there were any errors in the Python code.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+1. PEP8 Validation
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+2. HTML Validation
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+3. CSS Validation
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+4. Performance/Accessibility
 
-------
+5. Devices
 
-## FAQ about the uptime script
+6. Testing for User Stories
 
-**Why have you added this script?**
+## Deployment
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+#### GitHub Repository
 
-**How will this affect me?**
+1. Access your GitHub account and find the relevant repository.
+2. Click on 'Fork' on the top right of the page.
+3. You will find a copy of the repository in your own Github account.
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+#### Making a Local Clone
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+1. Access your GitHub account and find the relevant repository.
+2. Click the 'Code' button next to 'Add file'.
+3. To clone the repository using HTTPS, under clone with HTTPS, copy the link.
+4. Open Git Bash.
+5. Access the directory you want the clone to be have.
+6. In your IDE's terminal type 'git clone' and the paste the URL you copied.
+7. Press Enter.
+8. You now have a local clone.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+#### Heroku  Deployment
 
-**So….?**
+1. Create an account at heroku.com
+2. Create a new app, add app name and your region
+3. Click on create app
+4. Go to "Settings"
+5. Under Config Vars, add your sensitive data (creds.json for example)
+6. For this project, I set buildpacks to and in that order.
+7. Go to "Deploy" and at "Deployment method", click on "Connect to Github"
+8. Enter your repository name and click on it when it shows below
+9. Choose the branch you want to buid your app from
+10. If desired, click on "Enable Automatic Deploys", which keeps the app up to date with your Github repository
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+#### AWS S3
 
-**Can I opt out?**
+1. Create an account at aws.amazon.com
+2. Navigate to the IAM application and create a user and group
+3. Set the AmazonS3FullAccess for the user and copy the AWS ACCESS and SECRET keys as config vars to your workspace and deployment environment
+4. Create a new Bucket within the S3 application with an appropriate name.
+5. Enable public access for your bucket so users can access and use the services on your website (upload, view, download, etc). More info can be read in the official documentation: https://aws.amazon.com/s3/
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+#### Google API
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+1. Login or create a Google account and navigate to https://console.cloud.google.com/
+2. Create a new Project by clicking on the New Project icon
+3. Add Project name and details
+4. Under API's and services, enable the relevant API for your project (in this case Google Drive, Sheets and Calendar)
+5. IF the API requires, create a credential (service account in this case) for your project
+6. Save the API key as a secret in config vars in your workspace and deployment environment
+7. Under API's and services, enable the relevant API for your project (in this case Google Drive, Sheets and Calendar)
+8. Search for the needed tasks to be performed in the documentation for the specific API, for example here for the calendar API: Google Maps API Reference
+9. Add them to your code.
 
-**Anything more?**
+## Credits
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+## Reference
 
----
+Websites, movies that I used while working on the project.
 
-Happy coding!
+[How to Create Login System](https://www.youtube.com/watch?v=1UvTNMH7zDo)
+
+[Simple Blog App Tutorial](https://www.youtube.com/watch?v=AF4ji8bb1M8&t=3399s)
+
+[React Blog Tutorial](https://www.youtube.com/watch?v=tlTdbc5byAs)
+
+[Ecommerce Store](https://www.youtube.com/watch?v=UqSJCVePEWU&list=PLOLrQ9Pn6caxY4Q1U9RjO1bulQp5NDYS_)
+
