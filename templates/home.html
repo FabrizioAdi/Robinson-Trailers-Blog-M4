@@ -13,18 +13,18 @@
         <a href="{% url 'category' post.category %}">{{ post.category }}</a>
         - {{ post.author }}<br/>
 
-        <div class="image-container col-sm-6 col-md-4">
+        <div class="image col-sm-6 col-md-4">
             {% if "placeholder" in post.featured_image.url %}
             <img class="card-img-top"
                 src="https://codeinstitute.s3.amazonaws.com/fullstack/blog/default.jpg">
             {% else %}
             <img class="card-img-top" src=" {{ post.featured_image.url }}">
             {% endif %}
-
+            </div>
     {{ post.excerpt|slice:":200"|safe }}<br/>    
     {{ post.body|slice:":200"|safe }}<br/>
     {{ post.created_on}}
-    </div>
+    
 <!-- Link to edit and delete post -->
     <small>
         {% if user.is_authenticated %}

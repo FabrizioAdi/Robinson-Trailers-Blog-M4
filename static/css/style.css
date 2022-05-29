@@ -3,10 +3,11 @@ body {
     color: rgb(243, 237, 237);
 }
 
-.image-container {
+.image {
     position: relative;
 }
 
 figcaption {
     color:rgb(15, 128, 5)
 }
+
