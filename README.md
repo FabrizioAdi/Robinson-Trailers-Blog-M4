@@ -22,6 +22,7 @@ This project is the fourth out of four Milestone Projects in the Full Stack Web 
     + [Target audience](#target-audience)
   * [User Stories](#user-stories)
       - [Visitor goals:](#visitor-goals-)
+      - [Admin goals:](#admin-goals)
   * [Structure](#structure)
   * [Design](#design)
   * [Existing Features](#existing-features)
@@ -62,13 +63,49 @@ This project is the fourth out of four Milestone Projects in the Full Stack Web 
 
 ### User Goals
 
+* Check the latest trailers available on the market.
+* Check the latest ideas and solutions for a specific sector.
+* See what the new design looks like.
+
 ### Site Owner goals
+
+* Editing and adding newly produced trailers with their descriptions.
 
 ### Target audience
 
+* Everyone who loves trucking.
+* Blog dedicated to the transport sector.
+* Blog dedicated to the Construction sector.
+* Blog dedicated to the Forestry sector.
 
 ## User Stories
+
 #### Visitor goals:
+
+1. Availability on various devices.
+As a visitor, I can access the website from any device, so that I have access to the website on desktop, tablet and mobile.
+2. Trailers Informations.
+As a visitor, I can read more information about the trailers (description, images), so that I can see if the product is right for me and meets the company's needs.
+3. View Post.
+As a visitor, I can view a list of posts, so that I can select one to read and see the other reviews.
+4. Open a Post 
+As a visitor, I can click on a post, so that I can read the full text.
+5. Social Media
+As a visitor, I can access the social media accounts of the company, so that I can follow them and see the latest updates.
+6. Website Navigation
+As a visitor, I can be able to navigate easily through the website, so that I can find everything easily.
+7. General Information
+As a visitor, I can read and know more about the company, so that I know what the company is about.
+8. Contact, Asking Questions
+As a visitor, I can be able to contact the owner/admin of the company website, so that I can easily ask a question.
+9. Account Registration
+As a visitor, I can register an account, so that I can leave comment or like and be up to date about the latest news.
+10. Search/Filter 
+As a visitor, I can search or filter by category diffrent type of trailers, so that I can find specific trailer quick and easy.
+
+#### Admin goals:
+
+1. As admin, I want to add, edit and delete blog posts, so that it would be up to date all the time and I can manage any blog posts.
 
 ## Structure
 
@@ -87,13 +124,35 @@ The Bootstrap front-end framework is used through the project. Bootstrap provide
 
 1. The Navbar
 2. Home Page
-3. Footer
-4. Login/Logout
-5. Register
-6. Add and remove posts
-7. Contact
+3. Category Dropdown Menu
+* Forestry
+* Construction
+* Special
+4. Footer
+
+* The social media links are placed at the bottom of the footer.
+
+5. Django-Allauth features
+
+* Sign up
+Users can create a new account by filling in a from where the user have to fillin a email, username, password and password confirmation. If the info already exists there will be a message that he/she already has an account. The user can submit the form when the data is new. A verification email is sent to the user.
+* Login
+Users can login with their username ans password. There is also a link to change the password, if the user is forgotten it.
+* Forgot password
+A user can reset their password.
+* Logout
+The user can logout by clicking the logout link. After clicking the link there wil a confirmation if the user is sure to logout.
+
+6. Add posts
+7. Edit posts
+8. Delete posts
+9. Contact (Features)
 
 #### Features left to implement in the future
+
+1. Contact
+2. Comments
+3. Logging in with social media account, such as Facebook and Google.
 
 ## Technologies used
 
