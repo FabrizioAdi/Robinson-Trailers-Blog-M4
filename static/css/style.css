@@ -1,6 +1,7 @@
 body {
     background-color: rgb(54, 54, 54);
     color: rgb(243, 237, 237);
+    margin: 0;
 }
 
 .image-container {
@@ -20,5 +21,4 @@ figcaption {
     background-color: rgb(8, 8, 8);
     color: rgb(250, 248, 248);
 }
-
 

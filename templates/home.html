@@ -3,15 +3,21 @@
 
 {% block content %}
 
+<div class="container-fluid">
+    <div class="row">
 
 <h1>Post Blogs about Trailers</h1>
+
 <div class="col-12 mt-3 left">
     <div class="row">
+
     {% for post in object_list %}
+
 <!-- pk-primary key, unique key for post -->  
         <div><a href="{% url 'post-detail' post.pk %}"><figcaption>{{ post.title }}</figcaption></a>
         <a href="{% url 'category' post.category %}">{{ post.category }}</a>
         - Created by: {{ post.author }}<br/></div>
+
         <div class="col-md-4">
             <div class="card mb-4">
                 <div class="card-body">
@@ -22,8 +28,6 @@
             {% else %}
             <img class="card-img-top" src=" {{ post.featured_image.url }}">
             {% endif %}
-            </div>
-            </div>
         
     {{ post.excerpt|slice:":200"|safe }}<br/>    
     {{ post.body|slice:":200"|safe }}<br/>
@@ -39,9 +43,13 @@
         <a href ="{% url 'delete_post' post.pk %}">Delete Post</a>
         {% endif %}
         {% endif %}
-       
+    </div>
+    </div>
+
     </small>
 {% endfor %}
+</div>
+</div>
 </div>
 </div>
 
