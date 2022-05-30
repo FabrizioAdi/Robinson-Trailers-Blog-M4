@@ -11,7 +11,7 @@
 <!-- pk-primary key, unique key for post -->  
         <div><a href="{% url 'post-detail' post.pk %}"><figcaption>{{ post.title }}</figcaption></a>
         <a href="{% url 'category' post.category %}">{{ post.category }}</a>
-        - {{ post.author }}<br/></div>
+        - Created by: {{ post.author }}<br/></div>
         <div class="col-md-4">
             <div class="card mb-4">
                 <div class="card-body">
