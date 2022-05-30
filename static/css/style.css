@@ -13,7 +13,7 @@ body {
     overflow: hidden;
 }
 
-figcaption {
+.title {
     color:rgb(15, 128, 5)
 }
 

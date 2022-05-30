@@ -2,7 +2,7 @@
 
 A blog dedicated to a real trailers manufacturing company.
 
-![]()
+![](media/images/home.png)
 
 The company is Manufacturers and Suppliers of a complete range of Trailers and Equipment. The company headquarter is in Portarlington Co. Laoise Ireland.
 
@@ -11,7 +11,8 @@ The company offers many different trailers for different sectors, for example I 
 
 This project is the fourth out of four Milestone Projects in the Full Stack Web Development Program I am attending at The Code Institute.
 
-[View the live project here.]()
+[View the live project here.](https://8000-fabrizioadi-robinsontra-ncwlke3bzcf.ws-eu46.gitpod.io/)
+[Heroku app link](https://robinson-trailers-blog.herokuapp.com/)
 
 - [Table of Content](#table-of-content)
   * [User Experience (UX)](#user-experience--ux-)
@@ -31,6 +32,7 @@ This project is the fourth out of four Milestone Projects in the Full Stack Web 
       - [Languages](#languages)
       - [Applications, Libraries and Platforms](#applications--libraries-and-platforms)
       - [Databases](#databases)
+      - [Testing tools](#testing-tools)
   * [Validation](#validation)
   * [Deployment](#deployment)
       - [GitHub Repository](#github-repository)
@@ -117,8 +119,10 @@ As a visitor, I can search or filter by category diffrent type of trailers, so t
 1. Frameworks
 The Bootstrap front-end framework is used through the project. Bootstrap provides a quick design, responsive grid system, extensive prebuilt components and a modern interface for the project.
 2. Images
+The images that are used for the project are from my folder galery. The images is used for trailers blog images, open the post.
 3. Fonts
 4. Colour
+The colours that are used for the website are very simple and calm colours. These colours are used because the colours give a sleek and modern look. The trailers stand out of the calm and sleep appearance of the colours. I always based on a black background and white letters which makes the text easier to read.
 
 ## Existing Features
 
@@ -186,8 +190,19 @@ The user can logout by clicking the logout link. After clicking the link there w
 
 #### Databases
 
-* PostgreSQL is used as the production database.
-* SQlite3 is used as the development database.
+* PostgreSQL is used as the production database. For deployment, I used the PostgreSQL database whcih is provided by Heroku.
+* SQlite3 is used as the development database. During the development phase I have worked with the sqlite3 database, which was set by default by Django.
+
+#### Testing tools
+
+* Chrome DevTools is used to detect problems and test responsiveness.
+* Autoprefixer is used to parse the CSS and to add vendor prefixes to CSS rules.
+* W3C Markup Validation Service
+* The W3C Markup Validation Service is used to check whether there were any errors in the HTML5 code.
+* W3C CSS validator
+* The W3C CSS validator is used to check whether there were any errors in the CSS3 code.
+* JShint is a JavaScript validator that is used to check whether there were any errors in the JavaScript code.
+* The PEP8 validator is used to check whether there were any errors in the Python code.
 
 ## Validation
 
@@ -200,7 +215,15 @@ The user can logout by clicking the logout link. After clicking the link there w
 
 1. PEP8 Validation
 
-2. HTML Validation
+2. HTML Validation [Link](https://validator.w3.org/)
+
+I tested the HTML code by running my server locally by port 8000 and used view page source. This code I passed through the validator. There was a five the same error -img element must have an alt attribute.
+
+![](media/images/htmlvalidation.png)
+
+After correcting errors validator show that code passed and there where no errors.
+
+![](media/images/html2validation.png)
 
 3. CSS Validation
 
