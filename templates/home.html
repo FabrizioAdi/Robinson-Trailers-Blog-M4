@@ -5,15 +5,17 @@
 
 
 <h1>Post Blogs about Trailers</h1>
-
-<ul>
+<div class="col-12 mt-3 left">
+    <div class="row">
     {% for post in object_list %}
 <!-- pk-primary key, unique key for post -->  
-    <li><a href="{% url 'post-detail' post.pk %}"><figcaption>{{ post.title }}</figcaption></a>
+        <div><a href="{% url 'post-detail' post.pk %}"><figcaption>{{ post.title }}</figcaption></a>
         <a href="{% url 'category' post.category %}">{{ post.category }}</a>
-        - {{ post.author }}<br/>
-
-        <div class="image col-sm-6 col-md-4">
+        - {{ post.author }}<br/></div>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <div class="image-container">
             {% if "placeholder" in post.featured_image.url %}
             <img class="card-img-top"
                 src="https://codeinstitute.s3.amazonaws.com/fullstack/blog/default.jpg">
@@ -21,9 +23,13 @@
             <img class="card-img-top" src=" {{ post.featured_image.url }}">
             {% endif %}
             </div>
+            </div>
+        
     {{ post.excerpt|slice:":200"|safe }}<br/>    
     {{ post.body|slice:":200"|safe }}<br/>
     {{ post.created_on}}
+    </div>
+    </div>
     
 <!-- Link to edit and delete post -->
     <small>
@@ -35,9 +41,8 @@
         {% endif %}
        
     </small>
-</li>
 {% endfor %}
-</ul>
-
+</div>
+</div>
 
 {% endblock %}

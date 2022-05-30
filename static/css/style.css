@@ -3,11 +3,22 @@ body {
     color: rgb(243, 237, 237);
 }
 
-.image {
+.image-container {
     position: relative;
+}
+
+.masthead-image {
+    position: relative;
+    overflow: hidden;
 }
 
 figcaption {
     color:rgb(15, 128, 5)
 }
+
+.card {
+    background-color: rgb(8, 8, 8);
+    color: rgb(250, 248, 248);
+}
+
 
