@@ -104,10 +104,21 @@ As a visitor, I can be able to contact the owner/admin of the company website, s
 As a visitor, I can register an account, so that I can leave comment or like and be up to date about the latest news.
 10. Search/Filter 
 As a visitor, I can search or filter by category diffrent type of trailers, so that I can find specific trailer quick and easy.
+11. Add Blog Post
+As a visitor/user, I can add a blog post relevant to the website, so that I can share my knowledge with other users.
+12. Edit/Update Post
+As a visitor/user, I can edit or update my blog post, so that I can be sure that the blog page will have the latest news, and I can also correct errors.
+13. Delete Blog Post
+As a visitor/user, I can delete blog which has been on the page too long, so that I can delete old blog post.
+14. Login
+As a visitor/user, I can simple login to the website, so that I have access to all available options.
 
 #### Admin goals:
 
-1. As admin, I want to add, edit and delete blog posts, so that it would be up to date all the time and I can manage any blog posts.
+1. As admin, I want to add new blog posts, so that I would be up to date all the time with new information.
+2. As admin, I want to edit blog post, so that I can manage the blogs and correct errors.
+3. As admin, I want to delete blog post, so that I can delete old one or delete a blog that is not relevent.
+4. As admin, I want to manage the users, so that I can removing account of person who breaks the regulations or behaves incorrectly.
 
 ## Structure
 
