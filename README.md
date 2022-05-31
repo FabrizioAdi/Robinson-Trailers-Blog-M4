@@ -341,7 +341,10 @@ command: git push heroku main
 
 ## Reference
 
-Websites, movies that I used while working on the project.
+Websites, movies that I used while working on the project:
+
+The whole project was mainly based on the codestar blog project walktrough from Code Institute,
+I added a lot from myself regarding the functions that I focused on.
 
 [How to Create Login System](https://www.youtube.com/watch?v=1UvTNMH7zDo)
 
@@ -350,4 +353,6 @@ Websites, movies that I used while working on the project.
 [React Blog Tutorial](https://www.youtube.com/watch?v=tlTdbc5byAs)
 
 [Ecommerce Store](https://www.youtube.com/watch?v=UqSJCVePEWU&list=PLOLrQ9Pn6caxY4Q1U9RjO1bulQp5NDYS_)
+
+[Simple Blog Example](https://www.youtube.com/watch?v=t61nTi0lIlk)
 
