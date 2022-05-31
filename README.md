@@ -213,7 +213,13 @@ The user can logout by clicking the logout link. After clicking the link there w
 * JShint is a JavaScript validator that is used to check whether there were any errors in the JavaScript code.
 * PEP8 validator is used to check whether there were any errors in the Python code.
 
-1. PEP8 Validation
+1. PEP8 Validation [Link](http://pep8online.com/)
+
+Most of the errors that were shown concerned:
+* Missing whitespace around operator
+* Expected 2 blank lines, found 1
+
+![](media/images/pep8.png)
 
 2. HTML Validation [Link](https://validator.w3.org/)
 
@@ -225,9 +231,19 @@ After correcting errors validator show that code passed and there where no error
 
 ![](media/images/html2validation.png)
 
-3. CSS Validation
 
-4. Performance/Accessibility
+3. CSS Validation [Link](https://jigsaw.w3.org/css-validator/)
+
+![](media/images/cssvalidation.png)
+
+No big errors found.
+I got this message: This document is a properly written CSS version 3 + SVG.
+
+4. JS Hint [Link](https://jshint.com/)
+
+No errors found. Only some warnings.
+
+![](media/images/js.png)
 
 5. Devices
 

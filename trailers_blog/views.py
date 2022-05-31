@@ -13,7 +13,7 @@ class HomeView(ListView):
     model = Post
     template_name = 'home.html'
     ordering = ['-created_on']
-    #ordering = ['-id']
+    # ordering = ['-id']
 
     def get_context_data(self, *args, **kwargs):
         cat_menu = Category.objects.all()
@@ -24,7 +24,7 @@ class HomeView(ListView):
 # Functional view
 def CategoryView(request, cat):
     category_posts = Post.objects.filter(category=cat)
-    return render(request, 'categories.html', {'cat':cat.title(), 'category_posts':category_posts})
+    return render(request, 'categories.html', {'cat': cat.title(), 'category_posts': category_posts})
 
 class PostDetailView(DetailView):
     model = Post
@@ -43,9 +43,9 @@ class AddPostView(CreateView):
     model = Post
     form_class = PostForm
     template_name = 'add_post.html'
-    #fields = '__all__'
+    # fields = '__all__'
     # Method to add separately
-    #fields = ('title', 'author', 'featured_image', 'excerpt', 'body')
+    # fields = ('title', 'author', 'featured_image', 'excerpt', 'body')
 
     def get_context_data(self, *args, **kwargs):
         cat_menu = Category.objects.all()
@@ -62,7 +62,7 @@ class EditPostView(UpdateView):
     model = Post
     form_class = EditForm
     template_name = 'edit_post.html'
-    #fields = ('title', 'title_tag', 'featured_image', 'excerpt', 'body')
+    # fields = ('title', 'title_tag', 'featured_image', 'excerpt', 'body')
 
 class DeletePostView(DeleteView):
     model = Post
