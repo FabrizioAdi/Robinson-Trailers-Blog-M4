@@ -245,9 +245,19 @@ No errors found. Only some warnings.
 
 ![](media/images/js.png)
 
-5. Devices
+5. Lighthouse testing
 
-6. Testing for User Stories
+I used the automated tool Lighthouse to test the quality of the web pages.
+
+![](media/images/lighthouse.png)
+
+Results:
+
+![](media/images/lighthouse2.png)
+
+6. Devices
+
+7. Testing for User Stories
 
 ## Deployment
 
