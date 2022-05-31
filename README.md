@@ -123,7 +123,6 @@ As a visitor/user, I can simple login to the website, so that I have access to a
 ## Structure
 
 1. Home
-2. Contact
 
 ## Design 
 
@@ -138,30 +137,66 @@ The colours that are used for the website are very simple and calm colours. Thes
 ## Existing Features
 
 1. The Navbar
+
+![](media/images/navbar.png)
+
 2. Home Page
+
+![](media/images/homepage.png)
+
 3. Category Dropdown Menu
 * Forestry
 * Construction
 * Special
+
+![](media/images/dropdown.png)
+
 4. Footer
+
+![](media/images/footer.png)
 
 * The social media links are placed at the bottom of the footer.
 
 5. Django-Allauth features
 
 * Sign up
+
+![](media/images/register.png)
+
 Users can create a new account by filling in a from where the user have to fillin a email, username, password and password confirmation. If the info already exists there will be a message that he/she already has an account. The user can submit the form when the data is new. A verification email is sent to the user.
+
 * Login
+
+![](media/images/login.png)
+
 Users can login with their username ans password. There is also a link to change the password, if the user is forgotten it.
+
 * Forgot password
 A user can reset their password.
+
 * Logout
 The user can logout by clicking the logout link. After clicking the link there wil a confirmation if the user is sure to logout.
 
+![](media/images/signout.png)
+
 6. Add posts
+
+![](media/images/addblog.png)
+
 7. Edit posts
+
+![](media/images/editblog.png)
+
 8. Delete posts
-9. Contact (Features)
+
+![](media/images/delete.png)
+
+9. Post Detail Page
+
+![](media/images/postdetail.png)
+![](media/images/postdetail2.png)
+
+ Contact (Features)
 
 #### Features left to implement in the future
 
