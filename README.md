@@ -138,9 +138,25 @@ The colours that are used for the website are very simple and calm colours. Thes
 
 1. The Navbar
 
+The navbar allows users to easily navigate the website, no matter which page they are on. The navbar consists of:
+
+* On the left side there is the orginal company logo and the rest of the company name, the whole logo zone allows you to go back to the home page.
+* Next to the logo there is a categories dropdown menu that allows you to expand the menu and select the appropriate category. A given category sorted the blog assigned to it.
+* If the user is logged in, the Sign Up/Sign may see other options not available to other users that is not register or logout. These options are hidden by authorization. A logged-in user with an account can add, edit or delete blogs and add new categories.
+* Add blog option redirect to another page that allows a logged-in user to add a new blog.
+* Add category option allows a logged-in user to add a new category.
+* Registration is visible to all website visitors, after clicking it redirects to a new page where, after filling in the data, you can create an account.
+
+* A search bar at the right hand site is only for decoration, dont have any function. A search function may be added in the future.
+
 ![](media/images/navbar.png)
 
 2. Home Page
+
+* The home page serves as an introduction to the blog with relevant information.
+There are few created blogs with images. 
+* A blog with a photo displays the author, description and time the blog was added. Below you can see the edit and delete options that are displayed and available when the user is logged in. 
+* Blog title redirects and opens a new page where the blog is presented with the full description
 
 ![](media/images/homepage.png)
 
@@ -149,9 +165,13 @@ The colours that are used for the website are very simple and calm colours. Thes
 * Construction
 * Special
 
+These three categories show the blogs that belong to them.
+
 ![](media/images/dropdown.png)
 
 4. Footer
+
+It was used only for decorative purposes. It is created by the code institute. Of course, in the future I can create a fully functional footer connected to social media and redirecting to these pages.
 
 ![](media/images/footer.png)
 
@@ -181,28 +201,48 @@ The user can logout by clicking the logout link. After clicking the link there w
 
 6. Add posts
 
+* Logged in user can add blog and photo. A form prepared especially for this allows you to enter the title descriptions in the appropriate tables, select the author, category or add a photo.
+
 ![](media/images/addblog.png)
 
 7. Edit posts
+
+* Edit post is available only to logged in users and, just like adding a blog, a form with tables is displayed where you can correct errors.
 
 ![](media/images/editblog.png)
 
 8. Delete posts
 
+* Delete the blog is also available only to the logged in user, after clicking this option a page pops up asking for confirmation of the deletion. In the future, I can add another authorization blocking the removal of blogs by other logged in users.
+
 ![](media/images/delete.png)
 
 9. Post Detail Page
 
+* This page is not complicated, it only redirects to a single blog that was clicked on the title from the home page.
+
 ![](media/images/postdetail.png)
 ![](media/images/postdetail2.png)
 
- Contact (Features)
+10. Admin Panel 
+
+* The Django framework provides an excellent admin interface which this site has taken full advantage of. The admin panel of this site contains all instances of all database models, and the ability to edit, remove or add instances.
+
+![](media/images/adminpanel.png)
 
 #### Features left to implement in the future
 
 1. Contact
+
+* The contact page is one of those blog pages that can be added in the future. Logged in people could contact the site administrator regarding blogs or other ideas. Which would definitely improve the quality of the website :)
+
 2. Comments
+
+* Comments option should be added. Which would allow direct interaction with other users. There was also a faster opinion that everyone could answer.
+
 3. Logging in with social media account, such as Facebook and Google.
+
+These options are very popular because they verify and authorize the user on the basis of data downloaded from social media. It is a very quick method and does not require any personal details to be typed to create an account.
 
 ## Technologies used
 
@@ -304,6 +344,12 @@ Results:
 6. Devices
 
 7. Testing for User Stories
+
+8. Heroku Database_url error
+
+* While working on the project. I encountered such information twice, information was send to my email. As a result of which I could not open my website using port 8000 or the heroku application. After changing the configuration on herok and copying the code to the env.py file to the Database_url section, everything worked fine.
+
+![](media/images/herokuurl.png)
 
 ## Deployment
 
