@@ -112,6 +112,8 @@ As a visitor/user, I can edit or update my blog post, so that I can be sure that
 As a visitor/user, I can delete blog which has been on the page too long, so that I can delete old blog post.
 14. Login
 As a visitor/user, I can simple login to the website, so that I have access to all available options.
+15. Display message
+As a user, I would like to see the message that I am logged in, so that I can be sure that I am successfully logged in or logout. 
 
 #### Admin goals:
 
@@ -121,8 +123,6 @@ As a visitor/user, I can simple login to the website, so that I have access to a
 4. As admin, I want to manage the users, so that I can removing account of person who breaks the regulations or behaves incorrectly.
 
 ## Structure
-
-1. Home
 
 ## Design 
 
@@ -345,6 +345,15 @@ Results:
 
 7. Testing for User Stories
 
+* Trailers Blog user stories project created on github presents three columns. 
+
+1. The first column is: to do column that contains user stories that are to be done in the future and have not yet been created for this page.
+2. The second column is: in progress shows user stories which are in progress.
+3. The third and last column: shows which user stories have been done and implemented into the blog page and affect its functionality. 
+  Conclusion: As can be seen in the last column ten user stories have been added successfully and are working very good on the full blog webpage. Without thinking about individual user stories, the functionality of the page would not exist.
+
+![](media/images/userstorytesting.png)
+
 8. Heroku Database_url error
 
 * While working on the project. I encountered such information twice, information was send to my email. As a result of which I could not open my website using port 8000 or the heroku application. After changing the configuration on herok and copying the code to the env.py file to the Database_url section, everything worked fine.
@@ -447,4 +456,20 @@ I added a lot from myself regarding the functions that I focused on.
 [Ecommerce Store](https://www.youtube.com/watch?v=UqSJCVePEWU&list=PLOLrQ9Pn6caxY4Q1U9RjO1bulQp5NDYS_)
 
 [Simple Blog Example](https://www.youtube.com/watch?v=t61nTi0lIlk)
+
+Series of movies
+[Learn Django Class-Based Views - Using TemplateView - theory and examples](https://www.youtube.com/watch?v=GxA2I-n8NR8&list=PLOLrQ9Pn6caxNb9eFZJ6LfY29nZkKmmXT)
+
+Series of movies
+[Create A Simple Blog With Python and Django](https://www.youtube.com/watch?v=B40bteAMM_M&list=PLCC34OHNcOtr025c1kHSPrnP18YPB-NFi&index=2)
+
+[React Node.js Full Stack Blog App](https://www.youtube.com/watch?v=LelifxOrzvw)
+
+Acknowledgements.
+Big thanks to the Code Institute slack channel and support chat. 
+Also thanks to my tutor Kasia, my mentor Mo Mentor. 
+Thanks also to Tim Nelson for the consultation.
+
+Author Info
+FabrizioAdi
 
